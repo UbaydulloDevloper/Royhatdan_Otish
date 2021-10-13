@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigations"
+    app:startDestination="@id/SIgnIn">
+
+    <fragment
+        android:id="@+id/SIgnIn"
+        android:name="Project.royhatdanotish.SIgnIn"
+        android:label="fragment_s_ign_in"
+        tools:layout="@layout/fragment_s_ign_in" >
+        <action
+            android:id="@+id/action_SIgnIn_to_registration"
+            app:destination="@id/registration" />
+        <action
+            android:id="@+id/action_SIgnIn_to_showAll"
+            app:destination="@id/showAll" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration"
+        android:name="Project.royhatdanotish.Registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registration_to_showAll"
+            app:destination="@id/showAll" />
+    </fragment>
+    <fragment
+        android:id="@+id/showAll"
+        android:name="Project.royhatdanotish.ShowAll"
+        android:label="fragment_show_all"
+        tools:layout="@layout/fragment_show_all" />
+</navigation>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:elevation="15dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="25sp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20sp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dialog_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dialog_users_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingStart="25sp"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toEndOf="@+id/dialog_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/users_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="25sp"
+            android:text="@string/app_name"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/dialog_users_name"
+            app:layout_constraintTop_toBottomOf="@id/dialog_users_name" />
+
+        <ImageView
+            android:id="@+id/call_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:elevation="10dp"
+            android:src="@drawable/ic_group_36"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/users_location" />
+
+        <ImageView
+            android:id="@+id/send_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:elevation="10dp"
+            android:src="@drawable/ic_group_35"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/users_location" />
+
+        <ImageView
+            android:id="@+id/send_sms_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_email__1__1"
+            android:translationZ="100dp"
+            app:layout_constraintBottom_toBottomOf="@id/send_sms"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintLeft_toLeftOf="@id/send_sms"
+            app:layout_constraintRight_toRightOf="@id/send_sms"
+            app:layout_constraintTop_toTopOf="@id/send_sms"
+            app:layout_constraintVertical_bias="0.416" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
